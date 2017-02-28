@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>NO2OCD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
+
+        <!--  Google webfont -->
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type='text/css'>
+        <link href='https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="group">
+        <container>
+            <header class="top">
+                <h3><i class="fa fa-id-card-o fa-lg"></i>Dashboard</h3>
+                <img id="logo" src="img/logo.png">
+            </header>
+
+            <aside>
+                <ul class="list-group">
+                    <p>Selecteer groep</p>
+                    <a href="maandag-group.html" class="group-list">Maandag</a>
+                    <a href="dinsdag-group" class="group-list">Dinsdag</a>
+                    <a href="woensdag-group" class="group-list">Woensdag</a>
+                    <a href=# class="adding-group">Groep toevoegen<i class="fa fa-plus-circle fa-lg"></i></a>
+                </ul>
+            </aside>
+
+
+            <container class="new">
+                 <button type="submit" class="button-back">Terug</button>
+
+                <form>
+                    <fieldset>
+                        <h1>Voeg een nieuwe patiënt toe</h1>
+                        
+                        <label for="name">Voornaam<span class="req">*</span></label>
+                        <input type="text" required>
+
+                        <label for="name">Achternaam<span class="req">*</span></label>
+                        <input type="text" required>
+
+                        <label for="name">E-mailadres<span class="req">*</span></label>
+                        <input type="email" required>
+
+                        <label for="name">Gebruikersnaam<span class="req">*</span></label>
+                        <input type="text" required>
+
+                        <label for="name">Wachtwoord<span class="req">*</span></label>
+                        <input type="password" required>
+
+                        <label for="name">Groep<span class="req">*</span></label>
+                        <input type="text" required>
+
+                        <button type="submit" class="button-group"/>Voeg toe</button>
+                    </fieldset>
+                </form>
+            </container>
+        </container>
+         <script src="js/script.js"></script>
+    </body>
+</html>

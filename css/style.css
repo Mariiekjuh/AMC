@@ -1,0 +1,462 @@
+/**
+ *    RESETS ===========================================================================
+ */
+
+/*blue color: #2b3951;*/
+/*green color: #43c6a6;*/
+/*light grey: #e0e0e0;*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-padding-start: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homepage {
+    background: #2b3951;
+}
+
+.home-container {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.group {
+    background: #2b3951;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header.top {
+    background: #e0e0e0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 80px;
+}
+
+header h3 {
+    width: 20%;
+    background: #43c6a6;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-weight: 400;
+}
+
+header h3 i {
+    margin-right: 1rem;
+}
+
+
+
+header.top #logo {
+    width: 74px;
+    height: 58px;
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    margin-left: -37px;
+}
+
+#login {
+  display:flex;
+  transition: all .5s;
+  padding:1.5rem;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  height: 1rem;
+}
+
+#homelogin {
+    border: none;
+}
+
+#homelogin label {
+    margin: 0.5rem;
+}
+
+#homebtn {
+    background: #43c6a6;
+    transition: .3s ease-in-out;
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#homebtn:hover {
+    background: #32a488;
+}
+
+aside {
+    background: #e0e0e0;
+    float: left;
+    width: 20%;
+    height: 62rem;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside a.group-list, p {
+    display: block;
+    text-decoration: none;
+    background: white;
+    padding: 1.5rem 2rem;
+    color: #4b4b4b;
+    margin: 0 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dcdcdc;
+}
+
+aside p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+aside a:first-child {
+    margin-top: 1rem;
+}
+
+aside a:last-child {
+    margin-bottom: 1rem;
+}
+
+i {
+    margin-left: 0.5rem;
+}
+
+i.fa-angle-left {
+    margin-right: 2rem;
+}
+
+.adding-group, .adding-patient {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background: white;
+    padding: 1.5rem 2rem;
+    color: #4b4b4b;
+    margin: 0 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dcdcdc;
+}
+
+.adding-group:hover, .adding-patient:hover {
+    background: #94a8ca;
+    color: white;
+}
+
+aside a.group-list:hover, .adding-group:hover, {
+    background: #e7e7e7;
+    cursor: pointer;
+    border: 1px solid #43c6a6;
+}
+
+aside a.patient-list {
+    display: block;
+    text-decoration: none;
+    background: white;
+    padding: 1.5rem 2rem;
+    color: #4b4b4b;
+    margin: 0 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dcdcdc;
+}
+
+aside a.patient-list:hover {
+    background: #e7e7e7;
+}
+
+aside a.patient-list img, aside a.patient-list-active img{
+    height: 4rem;
+    display: inline-block;
+
+}
+
+.patient-list, .patient-list-active > h4 {
+    display: inline-block;
+    margin-bottom: 
+}
+
+.patient-list-active {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    color: white;
+    margin: 0 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dcdcdc;
+    background: #4f6385;
+}
+
+.progress {
+    height: 20px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 1rem;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-patient, .progress-patient2, .progress-patient3 {
+    height: 20px;
+    width: 75%;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-left: 22%;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+
+.progress-bar {
+    width: 70%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 14px;
+    padding: 0 0 0 1rem;
+}
+
+.progress-bar2 {
+    width: 30%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 14px;
+    padding: 0 0 0 1rem;
+}
+
+.progress-bar3 {
+    width: 80%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 14px;
+    padding: 0 0 0 1rem;
+
+}
+
+.progress-bar-patient {
+    width: 70%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 16px;
+    padding: 0 0 0 40%;
+    font-weight: 700;
+
+}
+
+.progress-bar-patient2 {
+    width: 30%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 16px;
+    padding: 0 0 0 40%;
+    font-weight: 700;
+
+}
+
+.progress-bar-patient3 {
+    width: 80%;
+    height: 20px;
+    background: #43c6a6;
+    color: white;
+    font-size: 16px;
+    padding: 0 0 0 40%;
+    font-weight: 700;
+
+}
+
+.algemeen {
+    width: 80%;
+    margin-left: 3rem;
+}
+
+.quote, .quote p {
+    background: #4f6385;
+    border: none;
+    border-radius: 4px;
+    width: 75%;
+    margin-left: 22%;
+    color: white;
+}
+
+.quote p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.quote h2 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.quote h3 {
+    margin-left: 1rem;
+}
+
+
+/*
+    Niels
+*/
+
+body.group {
+    display: flex;
+    flex-wrap: wrap;
+}
+body.group header.top {
+    width: 100%;
+}
+body.group aside {
+    width: 20%;
+}
+body.group div.algemeen {
+    width: 80%;
+    margin-left: 0;
+}
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.chart {
+    position: relative;
+}
+
+.chart div {
+    position: absolute;
+    width: 4rem;
+    height: 5rem;
+    opacity: 0;
+    top: 0;
+    outline: none;
+    cursor: pointer;
+}
+#chart-back {
+    left: 0;
+}
+#chart-forward {
+    right: 0;
+}
+
+/*
+    // Niels
+*/
+
+
+.req {
+    color: #43c6a6;
+}
+
+form {
+    display: block;
+    max-width: 45rem;
+    margin: 4rem auto;
+}
+
+legend {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1rem;
+    color: white;
+}
+
+input {
+    display: block;
+    background: none;
+    border: 0.15rem solid grey;
+    padding: 1rem 2rem;
+    margin-bottom: 1.2rem;
+    color: white;
+    font-size: 1rem;
+    width: 70%;
+}
+
+fieldset {
+    padding: 1rem;
+    border: none;
+}
+
+
+fieldset > h1 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.button-group {
+    background: #e49273;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 6rem;
+    border: none;
+    cursor: pointer;
+    -moz-transition: background .4s ease-in;
+    -o-transition: background-color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in;
+    transition: background-color .4s ease-in;
+}
+
+.button-group:hover, .button-back:hover {
+    background: #cd7757;
+}
+
+.button-back {
+    position: absolute;
+    margin: 2%;
+    background: #e49273;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    -moz-transition: background .4s ease-in;
+    -o-transition: background-color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in;
+    transition: background-color .4s ease-in;
+}
