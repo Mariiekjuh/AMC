@@ -12,68 +12,74 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body class="group">
-        <container>
-            <header class="top">
-                <h3><i class="fa fa-id-card-o fa-lg"></i>Dashboard</h3>
-                <img id="logo" src="img/logo.png">
-            </header>
+        <header class="top">
+            <h3><i class="fa fa-id-card-o fa-lg"></i>Dashboard</h3>
+            <img id="logo" src="img/logo.png">
+        </header>
 
-            <aside>
-                <ul class="list-group">
-                    <a href="group.html"><p><i class="fa fa-angle-left fa-lg"></i>Selecteer patiënt</p></a>
-                    <a href="maandag-group-marieke.html" class="patient-list">
-                        <img src="img/placeholder1.png">
-                        <h4>M-Rike</h4>
-                        <h5>Voor het laatst gezien: 14-01-2017</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </a>
-                    <a href="maandag-group.html" class="patient-list-active">
-                        <img src="img/placeholder2.png">
-                        <h4>Nikx</h4>
-                        <h5>Voor het laatst gezien: 12-01-2017</h5>
-                        <div class="progress">
-                            <div class="progress-bar2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                        </div>
-                    </a>
-                    <a href="maandag-group-donja.html" class="patient-list">
-                        <img src="img/placeholder3.png">
-                        <h4>Dronda</h4>
-                        <h5>Voor het laatst gezien: 8-01-2017</h5>
-                        <div class="progress">
-                            <div class="progress-bar3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-                    </a>
+        <aside>
+            <ul class="list-group">
+                <a href="group.html"><p><i class="fa fa-angle-left fa-lg"></i>Ga terug</p></a>
+                <a href="maandag-group-marieke.html" class="patient-list">
+                    <img src="img/placeholder1.png">
+                    <h4>M-Rike</h4>
+                    <h5>Voor het laatst gezien: 14-01-2017</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                </a>
+                <a href="#" class="patient-list active">
+                    <img src="img/placeholder2.png">
+                    <h4>Nikx</h4>
+                    <h5>Voor het laatst gezien: 12-01-2017</h5>
+                    <div class="progress">
+                        <div class="progress-bar2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                    </div>
+                </a>
+                <a href="maandag-group-donja.html" class="patient-list">
+                    <img src="img/placeholder3.png">
+                    <h4>Dronda</h4>
+                    <h5>Voor het laatst gezien: 8-01-2017</h5>
+                    <div class="progress">
+                        <div class="progress-bar3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </a>
 
-                    <a href="group-add-user.html" class="adding-patient">Patiënt toevoegen<i class="fa fa-plus-circle fa-lg"></i></a>
-                </ul>
-            </aside>
+                <a href="group-add-user.html" class="adding-patient">Patiënt toevoegen<i class="fa fa-plus-circle fa-lg"></i></a>
+            </ul>
+        </aside>
 
-            <container class="algemeen">
-                <section class="quote">
-                    <h2>Nikx - Nikki Klopper</h2>
+        <div class="algemeen">
+            <section class="quote">
+                 <div>
+                    <h2>M-Rike - Marieke Keur</h2>
                     <h3>Week 7 - 10 januari 2017</h3>
-                    <p>“Zonder problemen ergens heen te kunnen gaan.”</p>
-                </section>
-                <div class="progress-patient2">
-                    <div class="progress-bar-patient2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
                 </div>
-            </container>
+                <p>“Mijn angst om ziek te worden, onder controle krijgen.”</p>
+            </section>
+            <div class="progress-patient">
+                <div class="progress-bar-patient" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
 
-             <container class="charts">
-                    <a href="nikki-chart-1.2.html">
-                        <img id="chart1" src="img/chart-1.png">
-                    </a>
-                    <a href="nikki-chart-2.2.html">
-                        <img id="chart2" src="img/chart-2.png">
-                    </a>
-                    <a href="nikki-chart-3.2.html">
-                        <img id="chart3" src="img/chart-3.png">
-                    </a>
-                </container>
+            <div class="charts">
+                <div class="chart">
+                    <img src="img/chart-1.png">
+                    <div id="chart-back"></div>
+                    <div id="chart-forward"></div>
+                </div>
+                <div class="chart">
+                    <img src="img/chart-2.png">
+                    <div id="chart-back"></div>
+                    <div id="chart-forward"></div>
+                </div>
+                <div class="chart">
+                    <img src="img/chart-3.png">
+                    <div id="chart-back"></div>
+                    <div id="chart-forward"></div>
+                </div>
+            </div>
 
-        </container>
-    
+        </div>    
     </body>
+    <script type="text/javascript" src="js/script.js"></script>
 </html>

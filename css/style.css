@@ -73,9 +73,7 @@ header h3 i {
     margin-right: 1rem;
 }
 
-
-
-header.top #logo {
+.top #logo {
     width: 74px;
     height: 58px;
     position: absolute;
@@ -84,31 +82,33 @@ header.top #logo {
     margin-left: -37px;
 }
 
-#login {
-  display:flex;
-  transition: all .5s;
-  padding:1.5rem;
-  justify-content: center;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  height: 1rem;
+.login {
+    transition: all .5s;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 #homelogin {
     border: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 25rem;
 }
 
-#homelogin label {
-    margin: 0.5rem;
-}
 
 #homebtn {
     background: #43c6a6;
     transition: .3s ease-in-out;
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border: none;
-    width: 100%;
     border-radius: 0.25rem;
     font-size: 1rem;
     cursor: pointer;
@@ -130,7 +130,7 @@ aside ul {
     list-style-type: none;
 }
 
-aside a.group-list, p {
+.group-list, .list-group p {
     display: block;
     text-decoration: none;
     background: white;
@@ -141,10 +141,15 @@ aside a.group-list, p {
     border: 1px solid #dcdcdc;
 }
 
+.list-group p {
+    margin: 1rem 0.75rem;
+}
+
 aside p {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 aside a:first-child {
@@ -153,6 +158,7 @@ aside a:first-child {
 
 aside a:last-child {
     margin-bottom: 1rem;
+    padding: 1.5rem 0; 
 }
 
 i {
@@ -160,7 +166,7 @@ i {
 }
 
 i.fa-angle-left {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .adding-group, .adding-patient {
@@ -212,15 +218,10 @@ aside a.patient-list img, aside a.patient-list-active img{
     margin-bottom: 
 }
 
-.patient-list-active {
-    display: block;
-    text-decoration: none;
-    padding: 1.5rem 2rem;
+.patient-list.active {
     color: white;
-    margin: 0 0.75rem;
-    border-radius: 0.25rem;
-    border: 1px solid #dcdcdc;
     background: #4f6385;
+    pointer-events: none;
 }
 
 .progress {
@@ -234,12 +235,9 @@ aside a.patient-list img, aside a.patient-list-active img{
 }
 
 .progress-patient, .progress-patient2, .progress-patient3 {
-    height: 20px;
-    width: 75%;
     overflow: hidden;
     background-color: #e0e0e0;
     border-radius: 4px;
-    margin-left: 22%;
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
@@ -308,32 +306,21 @@ aside a.patient-list img, aside a.patient-list-active img{
 
 .algemeen {
     width: 80%;
-    margin-left: 3rem;
 }
 
 .quote, .quote p {
     background: #4f6385;
     border: none;
     border-radius: 4px;
-    width: 75%;
-    margin-left: 22%;
     color: white;
 }
 
-.quote p {
-    margin: 0;
-    padding: 1rem;
+.quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem;
 }
-
-.quote h2 {
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.quote h3 {
-    margin-left: 1rem;
-}
-
 
 /*
     Niels
@@ -363,6 +350,11 @@ body.group div.algemeen {
 
 .chart {
     position: relative;
+    padding: 2rem;
+}
+
+.chart img {
+    width: 100%;
 }
 
 .chart div {
@@ -405,17 +397,6 @@ legend {
 label {
     font-size: 1rem;
     color: white;
-}
-
-input {
-    display: block;
-    background: none;
-    border: 0.15rem solid grey;
-    padding: 1rem 2rem;
-    margin-bottom: 1.2rem;
-    color: white;
-    font-size: 1rem;
-    width: 70%;
 }
 
 fieldset {
